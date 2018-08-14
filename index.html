@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Calculator for many diferents mathematical operations">
+        <meta property="og:image"  content="./images/add.png">
+        <link rel="stylesheet" type="text/css" media="screen" href="./main.css" />
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600" rel="stylesheet">
+    </head>
+    <body class="background">  
+        <div class="title-main"><h1>CALCULATOR</h1></div>        
+        <table class="calculator">
+            <thead>
+                <tr class="calculator__operators js-calculator-title">
+                    <th class="calculator__operators js-remove">CE</th>
+                    <th class="calculator__operators js-delete"><img class="symbol" src="./images/delete.png" alt=""></th>
+                    <th class="calculator__operators js-substract">-</th>
+                    <th class="calculator__operators js-add">+</th>
+                    <th class="calculator__operators js-division">/</th> 
+                    <th class="calculator__operators js-multiplication">*</th> 
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="calculator__numbers js-number 1">1</td>
+                    <td class="calculator__numbers js-number 2">2</td>
+                    <td class="calculator__numbers js-number 3">3</td>
+                    <td class="calculator__numbers js-number 4">4</td>
+                    <td class="calculator__numbers js-number 5">5</td>
+                    <td class="calculator__numbers js-number" >00</td>
+                </tr>
+                <tr>
+                    <td class="calculator__numbers js-number">6</td>
+                    <td class="calculator__numbers js-number">7</td>
+                    <td class="calculator__numbers js-number">8</td>
+                    <td class="calculator__numbers js-number">9</td>
+                    <td class="calculator__numbers js-number">0</td>
+                    <td class="calculator__numbers js-number">000</td>
+                </tr>
+                <tr>
+                    <td class="calculator__operators js-equal"><img class="symbol" value="=" src="./images/equal.png" alt=""></td>
+                    <td class="calculator__numbers calculator__numbers--white js-process" colspan="3"></td>
+                    <td class="calculator__numbers calculator__numbers--white js-total" colspan="2"></td>
+
+                </tr>
+            </tbody>   
+        </table>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
